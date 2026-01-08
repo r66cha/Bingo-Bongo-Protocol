@@ -8,6 +8,30 @@ Offline payment authorization with deferred settlement.
 
 ![Bingo and Bongo](./public/IMG_5267.JPG)
 
+<details>
+<summary><strong>Contents</strong></summary>
+
+- [Bingo-Bongo Protocol](#bingo-bongo-protocol)
+  - [TL;DR](#tldr)
+  - [Motivation](#motivation)
+  - [Core Idea](#core-idea)
+  - [Roles \& Terminology](#roles--terminology)
+  - [What This Protocol Is NOT](#what-this-protocol-is-not)
+  - [Threat model (high level)](#threat-model-high-level)
+    - [Assumptions](#assumptions)
+    - [Primary risks](#primary-risks)
+    - [Mitigations](#mitigations)
+  - [High-level architecture](#high-level-architecture)
+  - [Voucher overview](#voucher-overview)
+  - [Overview of the settlement](#overview-of-the-settlement)
+  - [Use cases](#use-cases)
+  - [Status](#status)
+  - [Design Philosophy](#design-philosophy)
+  - [Disclaimer](#disclaimer)
+  - [License](#license)
+
+</details>
+
 ## TL;DR
 
 **Bingo-Bongo Protocol** enables two devices to authorize a payment
@@ -45,6 +69,7 @@ The protocol splits a payment into two phases:
 
 1. **Offline authorization**
 2. **Online settlement**
+3. **Instant crypto acquiring SDK with deferred settlement**
 
 While offline:
 
